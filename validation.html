@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="validation.css">
+</head>
+
+<body>
+  <!-- novalidate: بنقفل تحقق المتصفح الافتراضي عشان رسايلنا إحنا هي اللي تظهر -->
+  <form id="regForm" novalidate>
+    <h1>Register</h1>
+
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <p class="error" id="nameError"></p>
+
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <p class="error" id="emailError"></p>
+
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <p class="error" id="passwordError"></p>
+
+    <label for="confirm">Confirm password</label>
+    <input type="password" id="confirm">
+    <p class="error" id="confirmError"></p>
+
+    <label for="age">Age</label>
+    <input type="number" id="age">
+    <p class="error" id="ageError"></p>
+
+    <button type="submit">Sign up</button>
+    <p id="success"></p>
+  </form>
+
+  <script src="scrp.js"></script>
+</body>
+
+</html>
